@@ -27,7 +27,7 @@ export default function Home() {
         <Link to="/engineering" className={`${navClass} bottom-0 right-0`} {...engineeringHoverProps}>engineering</Link>
         <Link to="/" className={`${navClass} text-2xl`} style={{ position: 'absolute', top: '2.5rem', left: 0 }}>{'<'}</Link>
         <video
-          src="/GrowingFlowers_last4min_compressed.mp4"
+          src={`${import.meta.env.BASE_URL}GrowingFlowers_last4min_compressed.mp4`}
           autoPlay
           loop
           muted

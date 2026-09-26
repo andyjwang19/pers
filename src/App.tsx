@@ -9,7 +9,7 @@ import PassionProjects from './pages/PassionProjects'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Splash />} />
         <Route path="/art" element={<Home />} />
